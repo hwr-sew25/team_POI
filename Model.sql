@@ -5,7 +5,6 @@ CREATE TABLE points (
    x DOUBLE PRECISION NOT NULL,  -- X-Koordinate des Knotens
    y DOUBLE PRECISION NOT NULL  -- Y-Koordinate des Knotens
 ); 
-
 -- Tabelle für Points of Interest (POIs)
 CREATE TABLE poi (
     poi_ID INTEGER PRIMARY KEY REFERENCES points(point_ID),
