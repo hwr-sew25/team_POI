@@ -27,11 +27,11 @@ CREATE TABLE room (
     room_id VARCHAR(5) UNIQUE NOT NULL,
     room_name VARCHAR(250) NOT NULL,
     floor CHAR(2) NOT NULL,
+    wing_id INTEGER NOT NULL,
     side VARCHAR(6) NOT NULL, 
     category VARCHAR(50) NOT NULL,
     gender VARCHAR(6), 
     accessible INTEGER NOT NULL,
     notes TEXT, 
-    wing_id INTEGER NOT NULL,
     FOREIGN KEY (wing_id) REFERENCES wing(wing_id)
 );
