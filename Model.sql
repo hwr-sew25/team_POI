@@ -5,7 +5,8 @@ CREATE TABLE points (
     point_id INTEGER PRIMARY KEY AUTOINCREMENT,
     name TEXT NOT NULL UNIQUE,
     x REAL NOT NULL,
-    y REAL NOT NULL
+    y REAL NOT NULL,
+    z REAL NOT NULL
 );
 
 -- Table: POI (Points of Interest)
