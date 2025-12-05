@@ -46,3 +46,39 @@ INSERT INTO poi (poi_id, descriptionGER, descriptionENG) VALUES (
     'Hier finden Sie Snacks und Getränke für eine kleine Pause. Der Automat akzeptiert sowohl Karte als auch Bargeld. Wenn möglich, wählen Sie gerne regionale oder nachhaltige Produkte.', 
     'Here you can find snacks and drinks for a short break. The machine accepts both card and cash. Whenever possible, please choose regional or sustainable products.'
 );
+
+-- HWR Geschichte
+INSERT INTO poi (poi_id, descriptionGER, descriptionENG) VALUES (
+    10,
+    'Der Campus Schöneberg der HWR hat einen besonderen historischen
+    Hintergrund, da das Haus B bereits 1939 erbaut wurde. Von 1940 bis Kriegsende
+    nutzte das Oberkommando der Wehrmacht das Hause für die Erstellung
+    rassistischer Regelungen für Kriegsgefangenenlager.
+    Nach dem Wiederaufbau ab 1951 zog die Deutsche Hochschule für Politik ein, die
+    später in die FU Berlin eingegliedert wurde.
+    Ab 1971 entstand in dem Gebäude die Fachhochschule für Wirtschaft (FHW), eine
+    Reformhochschule mit Fokus auf praxisorientierter Betriebswirtschaftslehre.
+    Seit 2009 bildet das Gebäude nach einer Fusion einen Hauptstandort der neu
+    gegründeten Hochschule für Wirtschaft und Recht Berlin (HWR Berlin). Somit
+    spiegelt der Campus die wechselvolle Geschichte Berlins und die Entwicklung der
+    wirtschaftswissenschaftlichen Ausbildung wider.
+    Mehr Informationen können Sie auf der HWR Webseite finden: https://www.hwrberlin.de/hwr-berlin/ueber-uns/geschichte',
+
+    'The Schöneberg campus of the Berlin School of Economics and Law (HWR
+Berlin) has a unique historical background, as Building B was constructed as early as
+1939. From 1940 until the end of World War II, the High Command of the German
+Armed Forces (Oberkommando der Wehrmacht) used the building to draft racist
+regulations for prisoner-of-war camps.
+After reconstruction began in 1951, the German University of Politics (Deutsche
+Hochschule für Politik) moved in, which was later integrated into Freie Universität
+Berlin.
+In 1971, the building became home to the University of Applied Sciences for
+Economics (Fachhochschule für Wirtschaft – FHW), a reform university focusing on
+practice-oriented business administration.
+Since 2009, following a merger, the building has served as one of the main
+campuses of the newly founded Berlin School of Economics and Law (HWR Berlin).
+Thus, the campus reflects both Berlin’s eventful history and the evolution of
+economics education.
+More information can be found on the HWR website: https://www.hwr-berlin.de/hwrberlin/ueber-uns/geschichte'
+
+);
