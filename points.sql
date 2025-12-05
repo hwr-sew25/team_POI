@@ -1,5 +1,5 @@
 -- Alle Points, d.h. die Points of Interest und West- und Ostflügel
--- Koordinaten werden später korrekt eingefügt
+
 INSERT INTO points (point_id, name, x, y, z) VALUES (1, 'Ost Fluegel', 18.3, -39.2, 0.0);
 INSERT INTO points (point_id, name, x, y, z) VALUES (2, 'West Fluegel', 15.0, -16.0, 0.0);
 
