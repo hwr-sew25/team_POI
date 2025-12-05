@@ -14,8 +14,7 @@ CREATE TABLE poi (
     poi_id INTEGER PRIMARY KEY AUTOINCREMENT,
     descriptionGER TEXT,
     descriptionENG TEXT,
-    point_id INTEGER,
-    FOREIGN KEY (point_id) REFERENCES points(point_id)
+    FOREIGN KEY (poi_id) REFERENCES points(point_id)
 );
 
 -- Table: wing
