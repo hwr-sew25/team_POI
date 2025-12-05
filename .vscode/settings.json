@@ -1,17 +1,3 @@
 {
-    "sqltools.connections": [
-        {
-            "pgOptions": {
-                "ssl": {
-                    "rejectUnauthorized": false
-                }
-            },
-            "ssh": "Disabled",
-            "previewLimit": 50,
-            "server": "localhost",
-            "driver": "PostgreSQL",
-            "name": "PSE_Database",
-            "connectString": "postgresql://postgres:ProjectSoftwareEngineering2025@db.jntyagelykevnoifpnwf.supabase.co:5432/postgres"
-        }
-    ]
+    "sqltools.connections": []
 }

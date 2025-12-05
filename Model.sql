@@ -1,6 +1,6 @@
 -- Tabelle für Points 
 CREATE TABLE points ( 
-   point_id SERIAL PRIMARY KEY, 
+   point_id INTEGER PRIMARY KEY, 
    name VARCHAR(100) NOT NULL UNIQUE,
    x DOUBLE PRECISION NOT NULL,  -- X-Koordinate 
    y DOUBLE PRECISION NOT NULL  -- Y-Koordinate
