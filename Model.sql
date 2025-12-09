@@ -33,10 +33,11 @@ CREATE TABLE IF NOT EXISTS room (
     room_name TEXT NOT NULL,
     floor TEXT NOT NULL,
     wing_id INTEGER NOT NULL,
-    side TEXT NOT NULL,
+    side TEXT,
     category TEXT NOT NULL,
     gender TEXT,
     accessible INTEGER,
     notes TEXT,
     FOREIGN KEY (wing_id) REFERENCES wing(wing_id)
 );
+
