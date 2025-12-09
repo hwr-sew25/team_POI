@@ -11,4 +11,4 @@ INSERT INTO points (point_id, name, x, y, z) VALUES (6, 'Kartenausgabe Gerät', 
 INSERT INTO points (point_id, name, x, y, z) VALUES (7, 'Mülleimer', 22.8, -26.6, 0.0);
 INSERT INTO points (point_id, name, x, y, z) VALUES (8, 'Kaffeeautomat', 13.7, -39.9, 0.0);
 INSERT INTO points (point_id, name, x, y, z) VALUES (9, 'Snackautomat', 14.8, -39.9, 0.0);
-INSERT INTO points (point_id, name, x, y, z) VALUES (10, 'HWR Geschichte', 10.5, -25.6, 0.0)
+INSERT INTO points (point_id, name, x, y, z) VALUES (10, 'HWR Geschichte', 10.5, -25.6, 0.0);
