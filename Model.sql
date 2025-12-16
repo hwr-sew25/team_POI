@@ -30,7 +30,7 @@ CREATE TABLE IF NOT EXISTS room (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     building TEXT NOT NULL,
     room_id TEXT NOT NULL UNIQUE,
-    room_name TEXT NOT NULL,
+    room_name TEXT,
     floor TEXT NOT NULL,
     wing_id INTEGER NOT NULL,
     side TEXT,
