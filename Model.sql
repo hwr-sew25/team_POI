@@ -3,7 +3,8 @@ PRAGMA foreign_keys = ON;
 -- Table: points
 CREATE TABLE IF NOT EXISTS points (
     point_id INTEGER PRIMARY KEY AUTOINCREMENT,
-    name TEXT NOT NULL UNIQUE,
+    name_ger TEXT NOT NULL UNIQUE,
+    name_eng TEXT NOT NULL UNIQUE,
     x REAL NOT NULL,
     y REAL NOT NULL,
     z REAL NOT NULL
@@ -30,14 +31,16 @@ CREATE TABLE IF NOT EXISTS room (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     building TEXT NOT NULL,
     room_id TEXT NOT NULL UNIQUE,
-    room_name TEXT,
+    room_name_ger TEXT,
+    room_name_eng TEXT,
     floor TEXT NOT NULL,
     wing_id INTEGER NOT NULL,
     side TEXT,
     category TEXT NOT NULL,
     gender TEXT,
     accessible INTEGER,
-    notes TEXT,
+    notes_ger TEXT,
+    notes_eng TEXT,
     FOREIGN KEY (wing_id) REFERENCES wing(wing_id)
 );
 
