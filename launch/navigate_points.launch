@@ -1,0 +1,6 @@
+<launch>
+    <node pkg="point_navigator"
+          type="navigate_points.py"
+          name="point_navigator"
+          output="screen" />
+</launch>
