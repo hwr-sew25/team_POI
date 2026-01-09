@@ -1,0 +1,4 @@
+<launch>
+    <node name="map_server" pkg="map_server" type="map_server"
+          args="$(find point_navigator)/maps/foyer_try1.yaml" />
+</launch>

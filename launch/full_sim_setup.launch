@@ -1,0 +1,25 @@
+<launch>
+  <env name="TURTLEBOT3_MODEL" value="waffle_pi"/>
+  <arg name="start_x" default="18.0"/>
+  <arg name="start_y" default="-39.0"/>
+  <arg name="start_z" default="0.0"/>
+
+  <include file="$(find gazebo_ros)/launch/empty_world.launch">
+    <!--<arg name="world_name" value="$(find point_navigator)/worlds/foyer.world"/>-->
+    
+    <arg name="paused" value="false"/>
+    <arg name="use_sim_time" value="true"/>
+    <arg name="gui" value="true"/>
+  </include>
+
+  <param name="robot_description" command="$(find xacro)/xacro --inorder $(find turtlebot3_description)/urdf/turtlebot3_$(env TURTLEBOT3_MODEL).urdf.xacro" />
+  <node pkg="gazebo_ros" type="spawn_model" name="spawn_urdf" args="-urdf -model turtlebot3_$(env TURTLEBOT3_MODEL) -x $(arg start_x) -y $(arg start_y) -z $(arg start_z) -param robot_description" />
+
+  <include file="$(find turtlebot3_navigation)/launch/turtlebot3_navigation.launch">
+    <arg name="map_file" value="$(find point_navigator)/maps/foyer_try1.yaml" />
+    <arg name="open_rviz" value="true"/>
+  </include>
+
+  <node pkg="point_navigator" type="poi_service_node.py" name="poi_service_node" output="screen"/>
+
+</launch>
