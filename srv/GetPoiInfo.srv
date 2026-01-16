@@ -1,0 +1,7 @@
+string name
+---
+bool success
+string message
+
+
+diagnostic_msgs/KeyValue[] attributes
