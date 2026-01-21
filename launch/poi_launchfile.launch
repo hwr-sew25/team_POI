@@ -1,9 +1,13 @@
 <launch>
   <arg name="directions_topic" default="/directions/json_output" />
+  <arg name="display_topic"    default="/display/current_screen" /> 
   <arg name="navigation_topic" default="/navbot/target_pose" />
 
   <node pkg="point_navigator" type="poi_interface.py" name="poi_interface" output="screen">
-    <param name="input_topic" value="$(arg directions_topic)"/>
-    <param name="output_topic" value="$(arg navigation_topic)"/>
+    
+    <param name="speech_topic"  value="$(arg directions_topic)"/> 
+    <param name="display_topic" value="$(arg display_topic)"/>    
+    <param name="output_topic"  value="$(arg navigation_topic)"/>
+    
   </node>
 </launch>
