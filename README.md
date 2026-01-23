@@ -81,7 +81,7 @@ Hier ist genau beschrieben, was die anderen Gruppen senden müssen, damit unser 
 ### Für das Navigation Team (Roboter)
 
 * **Topic:** `/navbot/target_pose`
-* **Topic:** `rostopic echo /navbot/target_pose`
+* **Befehl:** `rostopic echo /navbot/target_pose`
 * **Typ:** `movement_api/TargetPose`
 * **Inhalt:** Wir senden euch die Zielkoordinaten aus unserer Datenbank.
 
@@ -105,3 +105,20 @@ Ihr könnt testen, ob der Point Navigator korrekt läuft, ohne dass die anderen 
     rostopic pub /directions/json_output std_msgs/String "data: '{\"status\": \"success\", \"data\": {\"room_found\": \"4.05\"}}'" -1
 
     rostopic pub /display/current_screen std_msgs/String "data: 'kaffeeautomat'" -1
+
+
+### Testing POI Gruppe:
+* Funktion Befehl Starten
+- roslaunch point_navigator poi_launchfile.launch
+* Topic an Navigation:
+- rostopic echo /navbot/target_pose
+* Topic an Speech Out:
+- rostopic echo /speech_out/say
+
+
+* Topic von Display simulieren
+- rostopic pub /display/current_screen std_msgs/String "data: 'NAME'" -1
+* Topic von Directions simulieren
+- rostopic pub /directions/json_output std_msgs/String "data: '{JSON...}'" -1
+* Topic Sprache von Display simulieren:
+- rostopic pub /language std_msgs/String "data: 'DE' oder 'EN'" -1
