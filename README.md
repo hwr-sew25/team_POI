@@ -81,6 +81,7 @@ Hier ist genau beschrieben, was die anderen Gruppen senden müssen, damit unser 
 ### Für das Navigation Team (Roboter)
 
 * **Topic:** `/navbot/target_pose`
+* **Topic:** `rostopic echo /navbot/target_pose`
 * **Typ:** `movement_api/TargetPose`
 * **Inhalt:** Wir senden euch die Zielkoordinaten aus unserer Datenbank.
 
