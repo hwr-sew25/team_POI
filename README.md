@@ -110,15 +110,19 @@ Ihr könnt testen, ob der Point Navigator korrekt läuft, ohne dass die anderen 
 ### Testing POI Gruppe:
 * Funktion Befehl Starten
 - roslaunch point_navigator poi_launchfile.launch
+
 * Topic an Navigation:
 - rostopic echo /navbot/target_pose
 * Topic an Speech Out:
 - rostopic echo /speech_out/say
 
+* Topic Sprache von Display simulieren:
+- rostopic pub /language std_msgs/String "data:'EN'" -1
+- rostopic pub /language std_msgs/String "data: 'DE'" -1
 
 * Topic von Display simulieren
-- rostopic pub /display/current_screen std_msgs/String "data: 'NAME'" -1
+- rostopic pub /display/current_screen std_msgs/String "data: 'kaffeeautomat'" -1
+- rostopic pub /display/current_screen std_msgs/String "data: 'Snack'" -1
+
 * Topic von Directions simulieren
-- rostopic pub /directions/json_output std_msgs/String "data: '{JSON...}'" -1
-* Topic Sprache von Display simulieren:
-- rostopic pub /language std_msgs/String "data: 'DE' oder 'EN'" -1
+- rostopic pub /directions/json_output std_msgs/String "data: '{\"status\": \"success\", \"data\": {\"room_found\": \"4.05\"}}'" -1
